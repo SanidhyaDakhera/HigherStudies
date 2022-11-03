@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<stdio.h>
+void main()
+{
+   int a, b, c;
+   cout<<"\n Enter no. ";
+   cin>>a;
+   cout<<"\n Shift no ";
+   cin>>b;
+   asm mov AX,a;
+   asm mov CX,b;
+   asm SHL AX,CL;
+   asm mov c,AX;
+   cout<<"\n The shifted no "<<c;
+}
